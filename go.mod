@@ -1,14 +1,14 @@
 module github.com/eclipse-xfsc/nats-message-library
 
-go 1.24.0
+go 1.23.0
 
-require github.com/eclipse-xfsc/oid4-vci-vp-library v1.4.6
+require github.com/eclipse-xfsc/oid4-vci-vp-library v1.4.6-goarchv1230
 
 require (
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.4.0 // indirect
-	github.com/eclipse-xfsc/crypto-provider-core v1.4.1 // indirect
-	github.com/eclipse-xfsc/did-core v1.0.2 // indirect
-	github.com/eclipse-xfsc/ssi-jwt v1.2.1 // indirect
+	github.com/eclipse-xfsc/crypto-provider-core v1.4.1-goarchv1230 // indirect
+	github.com/eclipse-xfsc/did-core v1.0.2-goarchv1230 // indirect
+	github.com/eclipse-xfsc/ssi-jwt v1.2.1-goarchv1230 // indirect
 	github.com/fsnotify/fsnotify v1.9.0 // indirect
 	github.com/go-viper/mapstructure/v2 v2.2.1 // indirect
 	github.com/goccy/go-json v0.10.5 // indirect
