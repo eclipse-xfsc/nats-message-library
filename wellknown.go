@@ -23,11 +23,19 @@ type GetIssuerMetadataReply struct {
 }
 
 const (
-	TopicIssuerRegistration     = "wellknown.issuer.registration"
-	EventTypeIssuerRegistration = "wellknown.issuer.registration"
+	TopicIssuerRegistration               = "wellknown.issuer.registration"
+	EventTypeIssuerRegistration           = "wellknown.issuer.registration"
+	EventTypeIssuerCredentialRegistration = "wellknown.issuer.credential.registration"
 )
 
 type IssuerRegistration struct {
 	common.Request
 	Issuer credential.IssuerMetadata `json:"issuer"`
+}
+
+type CredentialRegistration struct {
+	common.Request
+	Issuer                  string                             `json:"issuer"`
+	ConfigurationId         string                             `json:"ConfigurationId"`
+	CredentialConfiguration credential.CredentialConfiguration `json:"CredentialConfiguration"`
 }
