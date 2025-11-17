@@ -2,7 +2,7 @@ module github.com/eclipse-xfsc/nats-message-library
 
 go 1.24.0
 
-require github.com/eclipse-xfsc/oid4-vci-vp-library v1.5.0
+require github.com/eclipse-xfsc/oid4-vci-vp-library v1.6.0
 
 require (
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.4.0 // indirect
