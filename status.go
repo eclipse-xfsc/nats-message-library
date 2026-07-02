@@ -10,7 +10,8 @@ const (
 
 type CreateStatusListEntryRequest struct {
 	common.Request
-	Origin string `json:"origin"`
+	Origin string  `json:"origin"`
+	Type   *string `json:"type,omitempty"`
 }
 
 type CreateStatusListEntryReply struct {
