@@ -10,8 +10,17 @@ const (
 
 type CreateStatusListEntryRequest struct {
 	common.Request
-	Origin string  `json:"origin"`
-	Type   *string `json:"type,omitempty"`
+	Origin string `json:"origin"`
+	// Signer binding for the status list.
+	// Diese Werte bleiben für die erzeugte Liste stabil.
+	Key       string `json:"key"`
+	DID       string `json:"did"`
+	Namespace string `json:"namespace"`
+	// Optional, aber praktisch für Signer-Service / OCM-Kontext.
+	Group string `json:"group,omitempty"`
+	// Optional: StatusList2021, statuslist+jwt, etc.
+	Type    string `json:"type,omitempty"`
+	Purpose string `json:"purpose,omitempty"`
 }
 
 type CreateStatusListEntryReply struct {
