@@ -34,6 +34,7 @@ type CreateStatusListEntryRequest struct {
 
 type CreateStatusListEntryReply struct {
 	common.Reply
+	ListId    int    `json:"listid"`
 	Index     int    `json:"index"`
 	StatusUrl string `json:"statusUrl"`
 	Type      string `json:"type"`
