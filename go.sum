@@ -20,6 +20,8 @@ github.com/eclipse-xfsc/oid4-vci-vp-library v1.6.5 h1:MpOhZo7rXOIUTmXBYg2JYL4Qko
 github.com/eclipse-xfsc/oid4-vci-vp-library v1.6.5/go.mod h1:0SLW2+MoLNnK0XaUGJlWxrzQbkWVDLHwxKALqm3LPCk=
 github.com/eclipse-xfsc/oid4-vci-vp-library v1.7.2-oidvci10 h1:d3crgl2cgTJEVKbx7b5ylumoyochrrmKHe7h3uegZCc=
 github.com/eclipse-xfsc/oid4-vci-vp-library v1.7.2-oidvci10/go.mod h1:z3IaBHrKd+ku3eDMDSMSpWLsLNJY/Qn1kZgZE88uC60=
+github.com/eclipse-xfsc/oid4-vci-vp-library v1.8.1 h1:gME6SDK5iFFrPVxa86YrxLQJYcZHt1VD9yT7g8mcm+w=
+github.com/eclipse-xfsc/oid4-vci-vp-library v1.8.1/go.mod h1:z3IaBHrKd+ku3eDMDSMSpWLsLNJY/Qn1kZgZE88uC60=
 github.com/eclipse-xfsc/ssi-jwt/v2 v2.2.0 h1:JDsx/iPimPGWnBy1qvVDc2vvWmyS/yY0Fo4X+lbAYA4=
 github.com/eclipse-xfsc/ssi-jwt/v2 v2.2.0/go.mod h1:AanSJ720LclsvKfLgB5U4LnnIAAAMAcI949ILddY3EA=
 github.com/envoyproxy/go-control-plane v0.13.5-0.20251024222203-75eaa193e329/go.mod h1:Alz8LEClvR7xKsrq3qzoc4N0guvVNSS8KmSChGYr9hs=
