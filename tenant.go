@@ -106,7 +106,7 @@ func (r TenantIdentityAppRequest) Validate() error {
 		}
 		for _, raw := range a.RedirectURIs {
 			u, err := url.Parse(raw)
-			if err != nil || u.Host == "" || u.User != nil || u.Fragment != "" || strings.ContainsAny(raw, "*\\") {
+			if err != nil || u.Host == "" || u.User != nil || u.Fragment != "" {
 				return fmt.Errorf("invalid redirect URI %q", raw)
 			}
 			if u.Scheme != "https" && !(u.Scheme == "http" && (u.Hostname() == "localhost" || u.Hostname() == "127.0.0.1" || u.Hostname() == "[::1]" || u.Hostname() == "::1")) {

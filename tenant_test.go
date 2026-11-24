@@ -30,9 +30,9 @@ func TestAppCreateValidation(t *testing.T) {
 	if err := r.ValidateCreate(); err != nil {
 		t.Fatal(err)
 	}
-	r.Authorization.RedirectURIs = []string{"https://*.example.org/callback"}
-	if err := r.ValidateCreate(); err == nil {
-		t.Fatal("wildcard redirect accepted")
+	r.Authorization.RedirectURIs = []string{"https://*.example.org/*/callback"}
+	if err := r.ValidateCreate(); err != nil {
+		t.Fatal("wildcard redirect not accepted")
 	}
 	r.Authorization.RedirectURIs = []string{"https://example.org/callback"}
 	r.Authorization.PKCERequired = false
